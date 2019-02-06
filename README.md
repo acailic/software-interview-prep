@@ -24,3 +24,9 @@ The goal of this summary is to contain  the required theoretical material needed
 
 - [JavaScript](topics/javascript.md)
 - [React](topics/react.md)
+
+# Contact
+
+- [Github link](https://github.com/acailic/software-interview-prep)
+- [Personal Website](https://ilicaleksandar.github.io/)
+- [Resume](https://resume.creddle.io/resume/5yd021417fr)
