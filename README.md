@@ -19,3 +19,8 @@ The goal of this summary is to contain all the required theoretical material nee
 - [System Architecture Examples](topics/system-architecture-examples.md)
 - [Algorithms](topics/algorithms.md)
 - [Algorithms Examples](topics/algorithms-examples.md)
+
+## Client side
+
+- [JavaScript](topics/javascript.md)
+- [React](topics/react.md)
