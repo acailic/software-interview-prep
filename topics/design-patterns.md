@@ -223,6 +223,8 @@ This model allows us to decouple objects that produce the commands from their co
         Answer
     </summary>
 
+The interpreter pattern is a design pattern that specifies how to evaluate sentences in a language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language. The syntax tree of a sentence in the language is an instance of the composite pattern and is used to evaluate (interpret) the sentence for a client.
+
 </details>
 
 ### 21. What is _Iterator_ pattern?
@@ -242,7 +244,8 @@ The Iterator pattern provides a mechanism to access the elements of an aggregate
     <summary>
         Answer
     </summary>
-
+The mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior.
+With the mediator pattern, communication between objects is encapsulated within a mediator object. Objects no longer communicate directly with each other, but instead communicate through the mediator. This reduces the dependencies between communicating objects, thereby reducing coupling.
 </details>
 
 ### 23. What is _Memento_ pattern?
@@ -251,7 +254,8 @@ The Iterator pattern provides a mechanism to access the elements of an aggregate
     <summary>
         Answer
     </summary>
-
+The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback). 
+The memento pattern is implemented with three objects: the originator, a caretaker and a memento. The originator is some object that has an internal state. The caretaker is going to do something to the originator, but wants to be able to undo the change. The caretaker first asks the originator for a memento object. Then it does whatever operation (or sequence of operations) it was going to do. To roll back to the state before the operations, it returns the memento object to the originator.
 </details>
 
 ### 24. What is _Null object_ pattern?
@@ -332,7 +336,7 @@ Strategy is a behavioral software design pattern that enables selecting an algor
     <summary>
         Answer
     </summary>
-
+The template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses.
 </details>
 
 ### 29. What is _Visitor_ pattern?
@@ -341,5 +345,6 @@ Strategy is a behavioral software design pattern that enables selecting an algor
     <summary>
         Answer
     </summary>
-
+The visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existent object structures without modifying the structures. It is one way to follow the open/closed principle.
+In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes.
 </details>
