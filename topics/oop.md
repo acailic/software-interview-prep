@@ -26,7 +26,8 @@
 ### Composition (Structural)
 
 - Adapter : 
-
+  converts the interface of a class into another interface that a client wants.
+  
 - Facade : 
   provide a unified and simplified interface to a set of interfaces in a subsystem, therefore it hides the complexities of the       subsystem from the client. Higher-level interface that makes the sub-system
 
@@ -46,7 +47,7 @@
 - Command :
   encapsulate a request under an object as a command and pass it to invoker object. Invoker object looks for the appropriate         object which can handle this command and pass the command to the corresponding object and that object executes the command.       separates the object that invokes the operation from the object that actually performs the operation
 
-- Iterator
+- Iterator :
   Cursor
 - Visitor
   Represent an operation to be performed on elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
