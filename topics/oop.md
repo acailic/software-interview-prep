@@ -8,15 +8,18 @@
 
 ### Creation
 
-- Factory
+- Factory : 
+
   define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate
   plus: allows the sub-classes to choose the type of objects to create, loose-coupling
       
-- Builder
+- Builder :
+
   construct a complex object from simple objects using step-by-step approach.
   plus: clear separation between the construction and representation,change the internal representation of objects.
 
-- Singleton
+- Singleton :
+
   define a class that has only one instance and provides a global point of access to it.
   plus: Saves memory because object is not created at each request. Only single instance is reused. mostly used in multi-threaded and           database applications. It is used in logging, caching, thread pools, configuration settings.
 
