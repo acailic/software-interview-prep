@@ -25,14 +25,28 @@
 
 ### Composition (Structural)
 
-- Adapter
-- Facade
-- Decorator
-- Proxy
+- Adapter : 
+
+- Facade : 
+  provide a unified and simplified interface to a set of interfaces in a subsystem, therefore it hides the complexities of the       subsystem from the client. Higher-level interface that makes the sub-system
+
+- Decorator : 
+  attach a flexible additional responsibilities to an object dynamically. uses composition instead of inheritance to extend the     functionality of an object at runtime.The Decorator Pattern is also known as Wrapper.
+
+- Proxy : 
+  provides the control for accessing the original object. It provides the protection to the original object. Virtual, Remote..
+
 
 ### Behavioral
 
-- Chain of responsibility
-- Command
+- Chain of responsibility :
+  avoid coupling the sender of a request to its receiver by giving multiple objects a chance to handle the request.
+  reduces the coupling and adds flexibility while assigning the responsibilities to objects. Events produced in one class can be     sent to other handler classes with the help of composition
+  
+- Command :
+  encapsulate a request under an object as a command and pass it to invoker object. Invoker object looks for the appropriate         object which can handle this command and pass the command to the corresponding object and that object executes the command.       separates the object that invokes the operation from the object that actually performs the operation
+
 - Iterator
+  Cursor
 - Visitor
+  Represent an operation to be performed on elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
