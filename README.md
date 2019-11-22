@@ -5,6 +5,7 @@ The goal of this summary is to contain  the required theoretical material needed
 ## Topics
  
 - [OOP](topics/oop.md)
+- [SOLID](topics/solid.md)
 - [Design Patterns](topics/design-patterns.md)
 - [Design Principles](topics/design-principles.md)
 - [Data Structures](topics/data-structures.md)
