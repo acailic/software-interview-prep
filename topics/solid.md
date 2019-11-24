@@ -1,11 +1,17 @@
 # SOLID
 This is an acronym, which refers to:
 
-S: The Single Responsibility Principle
-O: The Open/Closed Principle
-L: The Liskov Substitution Principle
-I: The Interface Segregation Principle
+S: The Single Responsibility Principle 
+
+O: The Open/Closed Principle 
+
+L: The Liskov Substitution Principle 
+
+I: The Interface Segregation Principle 
+
 D: The Dependency Inversion Principle
+
+
 These are key principles in Object-Oriented Programming. Design principles such as these should be able to aid developers build more maintainable systems.
 
 ## The Single Responsibility Principle 
