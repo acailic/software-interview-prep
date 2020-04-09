@@ -48,7 +48,7 @@ No client should be forced to depend on methods it does not use.
 
 ## The Interface Segregation Principle
 
-The fourth of the 'SOLID' principles. This principle states that consumers of a component should not depend on functions of that component which it doesn't actually use.
+The fourth of the 'SOLID' principles. This principle states that consumers of a component should not depend on functions of that component which it doesn't actually use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
 
 As an example, imagine we have a method which reads an XML document from a structure which represents a file. It only needs to read bytes, move forwards or move backwards in the file. If this method needs to be updated because an unrelated feature of the file structure changes (such as an update to the permissions model used to represent file security), then the principle has been invalidated. It would be better for the file to implement a 'seekable-stream' interface, and for the XML reader to use that.
 
