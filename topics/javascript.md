@@ -269,13 +269,11 @@ Event bubbling is a type of event propagation where the event first triggers on 
 
 Let’s say, we have 3 nested elements `FORM > DIV > P` with a handler on each of them:
 
-```html
 <form onclick="alert('form')">FORM
 <div onclick="alert('div')">DIV
     <p onclick="alert('p')">P</p>
 </div>
 </form>
-```
 
 A click on the inner `<p>` first runs onclick:
 
@@ -286,7 +284,6 @@ A click on the inner `<p>` first runs onclick:
 
 > So if we click on `<p>`, then we’ll see 3 alerts.
 > The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
-
 For more info & reference
 [Javascript - Bubbling and capturing](https://javascript.info/bubbling-and-capturing)
 
