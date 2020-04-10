@@ -2,6 +2,9 @@
 Design Patterns Interview Questions & Answers
 </h1>
 
+![Image Design Patterns]
+(https://1.bp.blogspot.com/-FliyHYR2fYY/Xk3o0f4XOsI/AAAAAAAAdA4/SqBdGXG9rKY5XYtBUAxrZoKe6nBaXi2hACLcBGAsYHQ/s640/Design%2BPatterns%2Band%2Btheir%2Brelationship%2Bfor%2Bprogrammers%2Beducative.jpg)
+
 _Note: Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would._
 
 ### 1. Explain what is a pattern?
@@ -39,6 +42,7 @@ The most important reason is that patterns simplify the design and support of pr
 
 - Creational: all about creating new objects.
 - Structural: structuring your classes effectively, making the relationships minimal etc.
+- Behavioral: These design patterns are specifically concerned with communication between objects.
 
 </details>
 
@@ -50,7 +54,7 @@ The most important reason is that patterns simplify the design and support of pr
     </summary>
 
 Ensure that your class have only one instance and provide a global pointer to access it.
-
+Singleton pattern in Java is a pattern that allows only one instance of Singleton class available in the whole application. java.lang.Runtime is a good example of a Singleton pattern in Java. There are multiple ways to write thread-safe Singleton in Java, like by writing singleton using double-checked locking, by using static Singleton instance initialized during class loading. By the way, using Java enum to create thread-safe singleton is the most simple way.   
 </details>
 
 ### 5. What is _Builder_ pattern?
@@ -192,7 +196,7 @@ Flyweight is a structural design pattern that lets you fit more objects into the
         Answer
     </summary>
 
-Proxy is about creating a substitute class that has the same interface as an original service object. Upon receiving the request from a client, the proxy object creates an instance of a service object and delegate it all real work.
+Proxy is about creating a substitute class that has the same interface as an original service object. Upon receiving the request from a client, the proxy object creates an instance of a service object and delegate it all real work. Proxy actually creates object.
 
 </details>
 
@@ -336,7 +340,7 @@ Strategy is a behavioral software design pattern that enables selecting an algor
     <summary>
         Answer
     </summary>
-The template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses.
+The template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses.  Template method should be final so that the subclass can not override and change the steps of the algorithm. Still, the same time individual steps should be abstract, so that child classes can implement them.
 </details>
 
 ### 29. What is _Visitor_ pattern?
@@ -347,4 +351,13 @@ The template method pattern is a behavioral design pattern that defines the prog
     </summary>
 The visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existent object structures without modifying the structures. It is one way to follow the open/closed principle.
 In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes.
+</details>
+
+### 29. What is _Factory_ pattern?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    The Factory pattern in Java is a creation Java design pattern and favorite on many Java interviews. Factory pattern used to create an object by providing static factory methods. There are many advantages of providing factory methods like caching immutable objects, easy to introduce new objects, etc.
 </details>
