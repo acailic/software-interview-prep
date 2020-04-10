@@ -63,7 +63,7 @@ Singleton pattern in Java is a pattern that allows only one instance of Singleto
         Answer
     </summary>
 
-Separate construction of a complex object from its representation, so you can modify it and create different representations depending on your builder.
+Creational design pattern - Separate construction of a complex object from its representation, so you can modify it and create different representations depending on your builder.
 
 </details>
 
@@ -74,7 +74,7 @@ Separate construction of a complex object from its representation, so you can mo
         Answer
     </summary>
 
-Interface for creating families of object related / dependent on each other without using a concrete classes.
+Interface for creating families of object related / dependent on each other without using a concrete classes. Abstract Factory creates a factory
 
 </details>
 
@@ -154,7 +154,7 @@ Composing objects into tree structures and allowing clients to work with them as
     </summary>
 
 Attaching new behaviors to the objects by placing them inside of a wrapper that contains those behaviors
-
+Decorator pattern is used to implement functionality on an already created object,
 </details>
 
 ### 14. What is _Facade_ pattern?
@@ -195,7 +195,7 @@ Flyweight is a structural design pattern that lets you fit more objects into the
         Answer
     </summary>
 
-Proxy is about creating a substitute class that has the same interface as an original service object. Upon receiving the request from a client, the proxy object creates an instance of a service object and delegate it all real work. Proxy actually creates object.
+Proxy is about creating a substitute class that has the same interface as an original service object. Upon receiving the request from a client, the proxy object creates an instance of a service object and delegate it all real work. Proxy pattern is used for controlling access to an object.
 
 </details>
 
