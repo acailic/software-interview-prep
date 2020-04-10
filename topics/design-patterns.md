@@ -185,7 +185,7 @@ Flyweight is a structural design pattern that lets you fit more objects into the
     <summary>
         Answer
     </summary>
-
+structural pattern -The private class data design pattern seeks to reduce exposure of attributes by limiting their visibility. It reduces the number of class attributes by encapsulating them in single Data object. 
 </details>
 
 ### 17. What is _Proxy_ pattern?
