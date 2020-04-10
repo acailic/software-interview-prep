@@ -109,7 +109,7 @@ Good example of implementation Object Pool pattern is [Thread pool from .NET Fra
         Answer
     </summary>
 
-Creating new objects by coping existing ones without compromising their internals.
+Creating new objects by coping existing ones without compromising their internals. Prototype design pattern is used which refers to creating duplicate objects. In the prototype design pattern, if a similar object is already present then cloning is done keeping performance in mind.
 
 </details>
 
@@ -131,7 +131,7 @@ Adapter is a special object that converts calls sent by one object to the format
         Answer
     </summary>
 
-Structural design pattern that lets you split a giant class or a set of closely related classes into two separate hierarchies, abstraction and implementation, which can be developed independently of each other.
+Structural design pattern that lets you split a giant class or a set of closely related classes into two separate hierarchies, abstraction and implementation, which can be developed independently of each other. Bridge pattern is designed to isolate a class's interface from its implementation so we can vary or substitute the implementation without changing the client code
 
 </details>
 
@@ -205,7 +205,11 @@ Proxy is about creating a substitute class that has the same interface as an ori
     <summary>
         Answer
     </summary>
-
+It minimizes the coupling. Provides flexibility while assigning the responsibilities to objects.
+It permits a set of classes to act as one. The events produced in one class can be sent to other handler classes with the help of composition.
+Usage of Chain of Responsibility Pattern:
+When more than one objects are ready to handle a request, and the handler is unknown.
+In case the collection or a group of objects that can handle the request must be specified dynamically.
 </details>
 
 ### 19. What is _Command_ pattern?
@@ -285,34 +289,6 @@ Futher reading: [Null object Pattern](https://en.wikipedia.org/wiki/Null_object_
 
 Observer is design pattern in which one single object (Subject) notifies an open ended number of listener-objects (Observers) about any updates by calling their methods. Observer pattern widely adopted in event driven systems and lies in the base of MVC architectural pattern.
 
-Simplest example of this pattern in python:
-```python
-class Observable:
-    def __init__(self):
-        self.__observers = []
-    
-    def register_observer(self, observer):
-        self.__observers.append(observer)
-    
-    def notify_observers(self, *args, **kwargs):
-        for observer in self.__observers:
-            observer.notify(self, *args, **kwargs)
-
-class Observer:
-    def __init__(self, observable):
-        observable.register_observer(self)
-    
-    def notify(self, observable, *args, **kwargs):
-        print('Got', args, kwargs, 'From', observable)
-
-
-subject = Observable()
-observer = Observer(subject)
-subject.notify_observers('test')
-```
-
-Further reading: [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
-
 </details>
 
 ### 26. What is _State_ pattern?
@@ -352,7 +328,7 @@ The visitor design pattern is a way of separating an algorithm from an object st
 In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes.
 </details>
 
-### 29. What is _Factory_ pattern?
+### 30. What is _Factory_ pattern?
 
 <details>
     <summary>
@@ -360,3 +336,27 @@ In essence, the visitor allows adding new virtual functions to a family of class
     </summary>
     The Factory pattern in Java is a creation Java design pattern and favorite on many Java interviews. Factory pattern used to create an object by providing static factory methods. There are many advantages of providing factory methods like caching immutable objects, easy to introduce new objects, etc.
 </details>
+
+### 31. What is _MVC_ pattern?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+Model-View-Controller. The abbreviation MVC is taken from the Model-view-controller concept.
+Models are objects, used as blueprints for all of the objects that will be used in the application.
+Views contain the presentational aspect of the data and information located in the models.
+Controllers control both model and view as they serve as a connection between the two objects. The controller plays the role of an interface between View and Model and also intercepts all the incoming requests.
+</details>
+
+
+### 32. What is _DAO_ pattern?
+<details>
+    <summary>
+        Answer
+    </summary>
+Data Access Object Pattern is used to isolate low-level data accessing API or actions from high-level business services. 
+    Data Access Object Interface -  describes the standard actions to be performed on a model objec
+    Data Access Object concrete class - This class implements a DAO interface. This class is accountable to get data from a data source.
+    Model Object or Value Object -object is a plain old java object containing get/set methods to store data retrieved using DAO
+    </details>
