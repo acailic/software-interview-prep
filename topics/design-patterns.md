@@ -2,8 +2,7 @@
 Design Patterns Interview Questions & Answers
 </h1>
 
-![Image Design Patterns]
-(https://1.bp.blogspot.com/-FliyHYR2fYY/Xk3o0f4XOsI/AAAAAAAAdA4/SqBdGXG9rKY5XYtBUAxrZoKe6nBaXi2hACLcBGAsYHQ/s640/Design%2BPatterns%2Band%2Btheir%2Brelationship%2Bfor%2Bprogrammers%2Beducative.jpg)
+![Image Design Patterns](https://1.bp.blogspot.com/-FliyHYR2fYY/Xk3o0f4XOsI/AAAAAAAAdA4/SqBdGXG9rKY5XYtBUAxrZoKe6nBaXi2hACLcBGAsYHQ/s640/Design%2BPatterns%2Band%2Btheir%2Brelationship%2Bfor%2Bprogrammers%2Beducative.jpg)
 
 _Note: Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would._
 
