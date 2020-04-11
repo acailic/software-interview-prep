@@ -10,32 +10,21 @@ JavaScript Interview Questions & Answers
     </summary>
 
 A function's `this` keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode.
-
 In the **global execution context (outside of any function)**, `this` refers to the global object whether in `strict mode` or not.
-
 **Inside a function**, the value of this depends on how the function is called.
-
 **Implicitly Binding**: As an object method its `this` is set to the object the method is called on.
-
 **Explicit Binding**: Functions have three methods on their prototype, bind, call, and apply. If a function is called with these methods, then `this` is set to the first argument passed.
-
 As an example:
-
-```js
+js
 function echoThis() {
   console.log(this);
 }
 echoThis.call('hello'); // hello
-```
-
 **new Binding**: If a function is called using the `new` keyword, an empty object is created and assigned to `this` inside the function.
-
 **default Binding**: If a function is called, but the three scenarios above do not apply, then `this` is set to the global object if not in strict mode, and `undefined` if in strict mode.
-
 **Arrow function exception**: If a function is defined as an arrow function, the prior rules will not apply. Instead, `this` will refer to the `this` binding in the immediate scope where the arrow function was declared.
 
 ###### References
-
 - [MDN web docs / this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
   </details>
 
@@ -53,7 +42,6 @@ echoThis.call('hello'); // hello
 `var` is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
 It's declaration is hoisted, instead of `let` and `const`.
 
-```js
 for (var i = 0; i < 2; i++) {}
 console.log(i); // exists outside the block scope
 for (let i = 0; i < 2; i++) {}
@@ -61,8 +49,6 @@ console.log(i); // only exists inside the block scope
 for (const i = 0; i < 2; i++) {}
 console.log(i); // error reassignment, but only on top-level
 for (const cnt = { i: 0 }; cnt.i < 2; cnt.i++) {} // only exists inside the block scope
-```
-
 </details>
 
 ### 3. What is `===` operator? :star:
@@ -277,11 +263,8 @@ A click on the inner `<p>` first runs onclick:
 2. Then on the outer <div>.
 3. Then on the outer <form>.
 4. And so on upwards till the document object.
-
 So if we click on <p>, then we’ll see 3 alerts.
 The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
-
-
 </details>
 
 ### 14. What is NaN in Javascript? :star:
@@ -300,9 +283,7 @@ The global `NaN` property is a value representing Not-A-Number.
     <summary>
         Answer
     </summary>
-
 q-unit, mocha, chai, sinonJS, jasmine, ...
-
 </details>
 
 ### 16. What is Hoisting? :star:
@@ -311,9 +292,7 @@ q-unit, mocha, chai, sinonJS, jasmine, ...
     <summary>
         Answer
     </summary>
-
 Means that the declaration moved to the top of the current scope (current script or the current function). JavaScript only hoists declarations, not initializations.
-
 `let` and `const` don't get hoisted.
 
 </details>
@@ -338,9 +317,7 @@ Switches to strict mode which helps to prevent common errors like using unsafe o
 
 `bind` is a method to bind the current context for later execution e.g.
 
-```js
 element.addEventListener('click', this.onClick.bind(this), false);
-```
 
 it creates a new function which prevents accidental loss of scope. An alternative approach is to use apply, call or ES6 fat-arrow function.
 
@@ -365,11 +342,8 @@ Function that will take a function as argument or return a new function. For exa
     </summary>
 
 `map` - to iterate over an array and return a new one
-
 `filter` - to filter an array and return a new filtered one
-
 `reduce` - takes and reducer function which evaluate against every element and can produce every desired output (filter, map or simple value like sum)
-
 </details>
 
 ### 21. When to use event delegation? :star::star:
@@ -378,9 +352,7 @@ Function that will take a function as argument or return a new function. For exa
     <summary>
         Answer
     </summary>
-
 If you have to watch a lot of elements and performance is key
-
 </details>
 
 ### 22. What is the difference between ViewState and SessionState? :star:
@@ -391,9 +363,7 @@ If you have to watch a lot of elements and performance is key
     </summary>
 
 `ViewState` is specific to a page in a session.
-
 `SessionState` is specific to user specific data that can be accessed across all pages in the web application.
-
 </details>
 
 ### 23. Does JavaScript support automatic type conversion?
@@ -404,7 +374,6 @@ If you have to watch a lot of elements and performance is key
     </summary>
 
 Yes! JavaScript does support automatic type conversion.
-
 </details>
 
 ### 24. What are IIFE in javascript?
@@ -416,7 +385,7 @@ Yes! JavaScript does support automatic type conversion.
 
 An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It is a design pattern which is also known as a Self-Executing Anonymous Function.
 
-```js
+
 //example
 (function () { 
     var name = "John Doe";
@@ -431,12 +400,9 @@ var result = (function () {
 })(); 
 // Immediately creates the output: 
 result; // "John Doe"
-```
 
 Assigning the IIFE to a variable stores the function's result, not the function itself.
-
 This pattern is often used when trying to avoid polluting the global namespace, because all the variables used inside the IIFE (like in any other normal function) are not visible outside its scope.
-
 </details>
 
 
