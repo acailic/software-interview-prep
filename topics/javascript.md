@@ -2,7 +2,7 @@
 JavaScript Interview Questions & Answers
 </h1>
 
-### 1. Explain how `this` works in JavaScript :star:
+### 1. Explain how `this` works in JavaScript 
 
 <details>
     <summary>
@@ -28,7 +28,7 @@ echoThis.call('hello'); // hello
 - [MDN web docs / this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
   </details>
 
-### 2. What is the difference between `let` and `var` and `const`? :star:
+### 2. What is the difference between `let` and `var` and `const`? 
 
 <details>
     <summary>
@@ -51,7 +51,7 @@ console.log(i); // error reassignment, but only on top-level
 for (const cnt = { i: 0 }; cnt.i < 2; cnt.i++) {} // only exists inside the block scope
 </details>
 
-### 3. What is `===` operator? :star:
+### 3. What is `===` operator? 
 
 <details>
     <summary>
@@ -62,7 +62,7 @@ This is the strict comparison operator e.g. `5 == '5' = true` vs `5 === '5' = fa
 
 </details>
 
-### 4. Explain the difference between "==" and "==="? :star:
+### 4. Explain the difference between "==" and "==="? 
 
 <details>
     <summary>
@@ -73,7 +73,7 @@ This is the strict comparison operator e.g. `5 == '5' = true` vs `5 === '5' = fa
 
 </details>
 
-### 5. List out the different ways an HTML element can be accessed in a Javascript code. :star:
+### 5. List out the different ways an HTML element can be accessed in a Javascript code. 
 
 <details>
     <summary>
@@ -100,7 +100,7 @@ They return a non-live NodeList, which is an array-like list of elements, array-
 
 </details>
 
-### 6. What does a `typeof` operator do? :star:
+### 6. What does a `typeof` operator do? 
 
 <details>
     <summary>
@@ -118,7 +118,7 @@ typeof operand;
 
 </details>
 
-### 7. What is the difference between Local Storage and Session Storage? :star:
+### 7. What is the difference between Local Storage and Session Storage? 
 
 <details>
     <summary>
@@ -146,7 +146,7 @@ For more info please check
 
 </details>
 
-### 8. What is the difference between `null` and `undefined`? :star:
+### 8. What is the difference between `null` and `undefined`? 
 
 <details>
     <summary>
@@ -156,7 +156,7 @@ For more info please check
 `null` and `undefined` are two types in JavaScript. `undefined` means something hasn't been initialized. `null` means something is currently unavailable. 
 </details>
 
-### 9. What are anonymous functions in Javascript? :star:
+### 9. What are anonymous functions in Javascript? 
 
 <details>
     <summary>
@@ -187,7 +187,7 @@ const myFunc = () => {
 - [helephant.com / js-anonymous-function](http://helephant.com/2012/07/14/javascript-function-declaration-vs-expression/#function-operator-is-an-expression)
   </details>
 
-### 10. What is a function callback? :star:
+### 10. What is a function callback? 
 
 <details>
     <summary>
@@ -214,8 +214,7 @@ modifyArray(arr, function() {
 
 </details>
 
-### 11. What is the difference between `innerHTML` and `innerText`? :star:
-
+### 11. What is the difference between `innerHTML` and `innerText`? 
 <details>
     <summary>
         Answer
@@ -224,7 +223,7 @@ modifyArray(arr, function() {
 `innerHTML` lets you work with HTML rich text and doesn't automatically encode and decode text. In other words, `innerText` retrieves and sets the content of the tag as plain text, whereas `innerHTML` retrieves and sets the content in HTML format.
 </details>
 
-### 12. What is the difference between `HTMLCollection` and `NodeList`? :star:
+### 12. What is the difference between `HTMLCollection` and `NodeList`? 
 
 <details>
     <summary>
@@ -243,7 +242,7 @@ Both `HTMLCollection` and `NodeList` are collections of DOM nodes. Specifically,
 
 </details>
 
-### 13. What is an Event Bubbling in Javascript? :star:
+### 13. What is an Event Bubbling in Javascript? 
 
 <details>
     <summary>
@@ -267,7 +266,7 @@ So if we click on <p>, then we’ll see 3 alerts.
 The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
 </details>
 
-### 14. What is NaN in Javascript? :star:
+### 14. What is NaN in Javascript? 
 
 <details>
     <summary>
@@ -277,7 +276,7 @@ The process is called “bubbling”, because of events “bubble” from the in
 The global `NaN` property is a value representing Not-A-Number.
 </details>
 
-### 15. Which Test-Libraries do you use? :star:
+### 15. Which Test-Libraries do you use?
 
 <details>
     <summary>
@@ -286,7 +285,7 @@ The global `NaN` property is a value representing Not-A-Number.
 q-unit, mocha, chai, sinonJS, jasmine, ...
 </details>
 
-### 16. What is Hoisting? :star:
+### 16. What is Hoisting? 
 
 <details>
     <summary>
@@ -297,7 +296,7 @@ Means that the declaration moved to the top of the current scope (current script
 
 </details>
 
-### 17. What means `use strict`? :star:
+### 17. What means `use strict`? 
 
 <details>
     <summary>
@@ -308,7 +307,7 @@ Switches to strict mode which helps to prevent common errors like using unsafe o
 
 </details>
 
-### 18. What is `bind()` and when we use it? :star::star:
+### 18. What is `bind()` and when we use it?
 
 <details>
     <summary>
@@ -323,7 +322,7 @@ it creates a new function which prevents accidental loss of scope. An alternativ
 
 </details>
 
-### 19. Explain higher order function? :star::star:
+### 19. Explain higher order function? 
 
 <details>
     <summary>
@@ -334,7 +333,7 @@ Function that will take a function as argument or return a new function. For exa
 
 </details>
 
-### 20. Explain `map`, `filter`, `reduce` and when to use it? :star:
+### 20. Explain `map`, `filter`, `reduce` and when to use it? 
 
 <details>
     <summary>
@@ -346,7 +345,7 @@ Function that will take a function as argument or return a new function. For exa
 `reduce` - takes and reducer function which evaluate against every element and can produce every desired output (filter, map or simple value like sum)
 </details>
 
-### 21. When to use event delegation? :star::star:
+### 21. When to use event delegation? 
 
 <details>
     <summary>
@@ -355,7 +354,7 @@ Function that will take a function as argument or return a new function. For exa
 If you have to watch a lot of elements and performance is key
 </details>
 
-### 22. What is the difference between ViewState and SessionState? :star:
+### 22. What is the difference between ViewState and SessionState? 
 
 <details>
     <summary>
