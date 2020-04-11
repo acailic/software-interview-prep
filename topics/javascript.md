@@ -69,7 +69,8 @@ This is the strict comparison operator e.g. `5 == '5' = true` vs `5 === '5' = fa
         Answer
     </summary>
 
-"==" checks only for equality in value whereas "===" is a stricter equality test and returns false if either the value or the type of the two variables are different.
+"==" checks only for equality in value whereas "===" is a stricter equality 
+and returns false if either the value or the type of the two variables are different.
 
 </details>
 
@@ -273,13 +274,13 @@ So if we click on <p>, then we’ll see 3 alerts.The process is called “bubbli
 The global NaN property is a value representing Not-A-Number.
 </details>
 
-### 15. Which Test-Libraries do you use?
+### 15. Example of Test-Libraries  ?
 
 <details>
     <summary>
         Answer
     </summary>
-q-unit, mocha, chai, sinonJS, jasmine, ...
+q-unit, mocha, chai, sinonJS, jasmine, cypress ...
 </details>
 
 ### 16. What is Hoisting? 
