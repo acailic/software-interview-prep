@@ -249,7 +249,6 @@ Both `HTMLCollection` and `NodeList` are collections of DOM nodes. Specifically,
         Answer
     </summary>
 When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
-
 Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object.
 Let’s say, we have 3 nested elements FORM > DIV > P with a handler on each of them:
 <form onclick="alert('form')">FORM
@@ -262,8 +261,7 @@ A click on the inner <p> first runs onclick:
 2. Then on the outer <div>.
 3. Then on the outer <form>.
 4. And so on upwards till the document object.
-So if we click on <p>, then we’ll see 3 alerts.
-The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
+So if we click on <p>, then we’ll see 3 alerts.The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
 </details>
 
 ### 14. What is NaN in Javascript? 
@@ -272,7 +270,6 @@ The process is called “bubbling”, because of events “bubble” from the in
     <summary>
         Answer
     </summary>
-    
 The global NaN property is a value representing Not-A-Number.
 </details>
 
@@ -403,6 +400,3 @@ result; // "John Doe"
 Assigning the IIFE to a variable stores the function's result, not the function itself.
 This pattern is often used when trying to avoid polluting the global namespace, because all the variables used inside the IIFE (like in any other normal function) are not visible outside its scope.
 </details>
-
-
-
