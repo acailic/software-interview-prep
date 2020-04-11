@@ -252,11 +252,6 @@ Both `HTMLCollection` and `NodeList` are collections of DOM nodes. Specifically,
 When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
 Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object.
 Let’s say, we have 3 nested elements FORM > DIV > P with a handler on each of them:
-<form onclick="alert('form')">FORM
-<div onclick="alert('div')">DIV
-    <p onclick="alert('p')">P</p>
-</div>
-</form>
 A click on the inner <p> first runs onclick:
 1. On that <p>.
 2. Then on the outer div.
