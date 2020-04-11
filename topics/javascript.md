@@ -259,8 +259,8 @@ Let’s say, we have 3 nested elements FORM > DIV > P with a handler on each of 
 </form>
 A click on the inner <p> first runs onclick:
 1. On that <p>.
-2. Then on the outer <div>.
-3. Then on the outer <form>.
+2. Then on the outer div.
+3. Then on the outer form.
 4. And so on upwards till the document object.
 So if we click on <p>, then we’ll see 3 alerts.The process is called “bubbling”, because of events “bubble” from the inner element up through parents like a bubble in the water.
 </details>
