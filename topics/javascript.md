@@ -231,16 +231,15 @@ modifyArray(arr, function() {
         Answer
     </summary>
 
-Both `HTMLCollection` and `NodeList` are collections of DOM nodes. Specifically, an `HTMLCollection` is a collection of Elements which can be accessed by either index or the element’s name or id attributes. A `NodeList` is a collection of nodes and is an interface representing an ordered collection without specifying a particular implementation. Elements in an `HTMLCollection` are always live (they are updated in the collection when the underlying document is updated) while items in a `NodeList` may be live or static depending on which method is used to retrieve it.
+Both HTMLCollection and NodeList are collections of DOM nodes.
+Specifically, an HTMLCollection is a collection of Elements which can be accessed by either index or the element’s name or id attributes. A NodeList is a collection of nodes and is an interface representing an ordered collection without specifying a particular implementation. Elements in an HTMLCollection are always live (they are updated in the collection when the underlying document is updated) while items in a NodeList may be live or static depending on which method is used to retrieve it.
 
-`HTMLCollection`s and `NodeList`s also differ in the methods they provide; an `HTMLCollection` provides a `namedItem` method to access elements by `name` or `id` attribute while a `NodeList` provides methods to access the collection's `keys` and `values`.
+HTMLCollections and NodeLists also differ in the methods they provide; an HTMLCollection provides a namedItem method to access elements by name or id attribute while a NodeList provides methods to access the collection's keys and values.
 
 ###### References
-
 - [ MDN - HTMLCollection ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
 - [ MDN - NodeList ](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
 - [ HackerNoon - HTMLCollection, NodeList and array of objects](https://hackernoon.com/htmlcollection-nodelist-and-array-of-objects-da42737181f9)
-
 </details>
 
 ### 13. What is an Event Bubbling in Javascript? 
