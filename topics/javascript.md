@@ -24,7 +24,7 @@ echoThis.call('hello'); // hello
 **default Binding**: If a function is called, but the three scenarios above do not apply, then `this` is set to the global object if not in strict mode, and `undefined` if in strict mode.
 **Arrow function exception**: If a function is defined as an arrow function, the prior rules will not apply. Instead, `this` will refer to the `this` binding in the immediate scope where the arrow function was declared.
 
-###### References
+##### References
 - [MDN web docs / this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
   </details>
 
@@ -165,8 +165,7 @@ For more info please check
     </summary>
 
 Anonymous functions (also called lambda functions) are functions where the name is omitted. They are commonly used as parameters to other functions or stored in a variable.
-
-```js
+ 
 //common use
 setTimeout(function() {
     console.log('Hi from my anonymous function');
@@ -180,10 +179,9 @@ setTimeout(() => {
 // assigning to a variable
 const myFunc = () => {
     // do something awesome
-}
-```
+} 
 
-###### References
+#### References
 
 - [helephant.com / js-anonymous-function](http://helephant.com/2012/07/14/javascript-function-declaration-vs-expression/#function-operator-is-an-expression)
   </details>
@@ -196,8 +194,7 @@ const myFunc = () => {
     </summary>
     
 A callback function is a function that is passed to another function as an argument and is executed after some operation has been completed. Below is an example of a simple callback function that logs to the console after some operations have been completed.
-
-```js
+ 
 const modifyArray = (arr, callback) => {
   // do something to arr here
   arr.push(100);
@@ -210,8 +207,7 @@ var arr = [1, 2, 3, 4, 5];
 
 modifyArray(arr, function() {
   console.log('array has been modified', arr);
-});
-```
+}); 
 
 </details>
 
@@ -236,7 +232,8 @@ Specifically, an HTMLCollection is a collection of Elements which can be accesse
 
 HTMLCollections and NodeLists also differ in the methods they provide; an HTMLCollection provides a namedItem method to access elements by name or id attribute while a NodeList provides methods to access the collection's keys and values.
 
-###### References
+
+#### References
 - [ MDN - HTMLCollection ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
 - [ MDN - NodeList ](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
 - [ HackerNoon - HTMLCollection, NodeList and array of objects](https://hackernoon.com/htmlcollection-nodelist-and-array-of-objects-da42737181f9)
