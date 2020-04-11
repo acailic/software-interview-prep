@@ -334,7 +334,7 @@ In essence, the visitor allows adding new virtual functions to a family of class
     <summary>
         Answer
     </summary>
-    The Factory pattern in Java is a creation Java design pattern and favorite on many Java interviews. Factory pattern used to create an object by providing static factory methods. There are many advantages of providing factory methods like caching immutable objects, easy to introduce new objects, etc.
+    The Factory pattern in Java is a creation Java design pattern . Factory pattern used to create an object by providing static factory methods. There are many advantages of providing factory methods like caching immutable objects, easy to introduce new objects, etc.
 </details>
 
 ### 31. What is _MVC_ pattern?
