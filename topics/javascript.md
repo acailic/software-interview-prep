@@ -257,7 +257,7 @@ Let’s say, we have 3 nested elements FORM > DIV > P with a handler on each of 
     <p onclick="alert('p')">P</p>
 </div>
 </form>
-A click on the inner `<p>` first runs onclick:
+A click on the inner <p> first runs onclick:
 1. On that <p>.
 2. Then on the outer <div>.
 3. Then on the outer <form>.
@@ -273,7 +273,7 @@ The process is called “bubbling”, because of events “bubble” from the in
         Answer
     </summary>
     
-The global `NaN` property is a value representing Not-A-Number.
+The global NaN property is a value representing Not-A-Number.
 </details>
 
 ### 15. Which Test-Libraries do you use?
@@ -292,7 +292,7 @@ q-unit, mocha, chai, sinonJS, jasmine, ...
         Answer
     </summary>
 Means that the declaration moved to the top of the current scope (current script or the current function). JavaScript only hoists declarations, not initializations.
-`let` and `const` don't get hoisted.
+let and const don't get hoisted.
 
 </details>
 
