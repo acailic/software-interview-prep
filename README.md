@@ -8,6 +8,7 @@ The goal of this summary is to contain  the required theoretical material needed
 - [SOLID](topics/solid.md)
 - [Design Patterns](topics/design-patterns.md)
 - [Design Principles](topics/design-principles.md)
+- [Distributed systems](topics/distributed-systems.md)
 - [Data Structures](topics/data-structures.md)
 - [Data Structures Examples](topics/data-structures-examples.md) 
 - [Java](topics/java.md)
