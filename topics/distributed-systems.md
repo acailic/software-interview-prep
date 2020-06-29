@@ -53,7 +53,14 @@ Proceed with the operation and thus provide availability but risk inconsistency
     <summary>
         Answer
     </summary> 
-  dadada.
+   
+Optimistic Locking is a strategy where you read a record, take note of a version number (other methods to do this involve dates, timestamps or checksums/hashes) and check that the version hasn't changed before you write the record back. When you write the record back you filter the update on the version to make sure it's atomic. (i.e. hasn't been updated between when you check the version and write the record to the disk) and update the version in one hit.
+
+If the record is dirty (i.e. different version to yours) you abort the transaction and the user can re-start it.
+
+This strategy is most applicable to high-volume systems and three-tier architectures where you do not necessarily maintain a connection to the database for your session. In this situation the client cannot actually maintain database locks as the connections are taken from a pool and you may not be using the same connection from one access to the next.
+
+Pessimistic Locking is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
 </details>
 
 ### 6. short and long polling, compared to Web Sockets ?
@@ -61,7 +68,12 @@ Proceed with the operation and thus provide availability but risk inconsistency
     <summary>
         Answer
     </summary> 
-  dadada.
+    Short polling.
+Send a request to the server, get an instant answer. Do this every x seconds, minutes etc. to keep your application up-to-date. But: This costs a lot of requests.
+    Long polling
+Send a request to the server, keep the connection open, get an answer when there's "data" for you. This will cost you only one request (per user), but the request keeps a permanent connection between client and server up
+  Long polling- potentially when you are exchanging single call with server, and server is doing some work in background. Also when you won't query server on the same page anymore. Also when you are not using php as layer to handle the long polled connection (node/c++ can be a simple middle layer). Note long polling can be really beneficial, but only when you make it so.
+Websocket- you potentially will exchange more then one or two calls with server, or something might come from server you did not expected / asked, like notification of email or something. You should plan different "rooms", depend on functionalities. Embrace the event based nature of javascript
 </details>
 
 ### 7. NoSQL databases, when they can be useful, how they can help with optimization?
