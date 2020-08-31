@@ -1,4 +1,5 @@
 # Software Engineering Interview Preparation
+## https://alexilic92.gitbook.io/software-interview-prep/ Github Book
 
 The goal of this summary is to contain  the required theoretical material needed to go on a software engineering interview, but (hopefully) no too much. It originated out of  [orrsella](https://github.com/orrsella/) personal notes while preparing for such interviews. I view it as an executive summary, that should ideally take a few hours to read, and that you should read multiple times while preparing for the interview. See [this post](https://orrsella.com/2016/05/14/preparing-for-a-facebook-google-software-engineer-interview/) for more background and tips on preparing for an interview.
  
