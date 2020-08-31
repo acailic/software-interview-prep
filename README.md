@@ -21,6 +21,7 @@ The goal of this summary is to contain  the required theoretical material needed
 - [System Architecture Examples](topics/system-architecture-examples.md)
 - [Algorithms](topics/algorithms.md)
 - [Algorithms Examples](topics/algorithms-examples.md)
+- [AWS](topics/aws.md)
 
 ## Client side
 
