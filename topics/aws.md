@@ -26,13 +26,18 @@ We can’t be able to connect EBS volume to multiple instances.  Although, you c
 
 Amazon S3 is a REST service, and you can send a request by using the REST API or the AWS SDK wrapper libraries that wrap the underlying Amazon S3 REST API.
 By default, you can create up to 100 buckets in each of your AWS accounts.
-difference between EC2 and Amazon S3 is that
+difference between EC2 and Amazon S3 is that:
+
 |EC2|	S3|
 | --- | --- |
 |It is a cloud web service used for hosting your application |  It is a data storage system where any amount of data can be stored|
 |It is like a huge computer machine which can run either Linux or Windows and can handle application like PHP, Python, Apache or any databases |  It has a REST interface and uses secure HMAC-SHA1 authentication keys|
+
+
 EC2 officially launched in the year 2006.
+
 The buffer is used to make the system more robust to manage traffic or load by synchronizing different component.  Usually, components receive and process the requests in an unbalanced way. With the help of buffer, the components will be balanced and will work at the same speed to provide faster services.
+
 Currently Amazon VPI not provide support for broadcast or multicast.
 VPC stands for Virtual Private Cloud. It allows you to customize your networking configuration. It is a network which is logically isolated from another network in the cloud. It allows you to have your IP address range,  internet gateways, subnet and security groups
 5 VPC Elastic IP addresses are allowed for each AWS account.  It’s only possible between VPCs in the same region.
@@ -40,6 +45,7 @@ A large section of IP Address divided into chunks is known as subnets. You can h
 Internet gateway is needed to use VPC (virtual private cloud peering) connections.
 
 Edge location is the area where the contents will be cached. So, when a user is trying to accessing any content, the content will automatically be searched in the edge location.
+
 Snowball is a data transport option. It used source appliances to a large amount of data into and out of AWS. With the help of snowball, you can transfer a massive amount of data from one place to another. It helps you to reduce networking costs.
 
 ## Instances
